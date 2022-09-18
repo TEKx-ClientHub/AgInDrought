@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ag in Drought</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="liveStock.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+
+    <!-- Table -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="top-header text-light py-1 text-center"
+      style="background: #5c5755"
+    >
+      <div class="col-md-7 pl-10">
+        <p class="fw-bold">U.S. Agricultural Commodities in Drought</p>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg text-light"
+      style="margin-top: 5px; background: #076934"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          style="margin-left: 175px"
+        >
+          <ul class="navbar-nav justify-content-between w-50">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../home/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rowCrops/rowCrops.html">Row Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../liveStock/liveStock.html"
+                >Livestock & Forage</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../specialityCrops/specialityCrops.html"
+                >Speciality Crops</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h3 class="date">Agriculture in Drought for May 24, 2022</h3>
+    <h5>All values listed below are percentages</h5>
+
+    <!-- Table -->
+
+    <table
+      class="table table-striped"
+      id="tableCrops"
+      data-pagination="true"
+      data-search="true"
+      data-show-columns="true"
+      data-advanced-search="true"
+      data-id-table="advancedTable"
+    >
+      <thead>
+        <tr>
+          <th data-sortable="true" data-field="col"></th>
+          <th data-sortable="true" data-field="col"></th>
+          <th data-sortable="true" data-field="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Alfalfa Hay acreage</td>
+          <td>44</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cattle acreage</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hay acreage</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hogs and Pigs acreage</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Milk Cows acreage</td>
+          <td>46</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script>
+      $(function () {
+        $("#table").bootstrapTable();
+      });
+    </script>
+
+    <!-- Cards -->
+    <div class="liveStock-cards">
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Data Table
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/DataTable.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View tabular data for the percent of the crop or livestock area
+          classified by the U.S. Drought Monitor categories.
+        </div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Data Graph
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/DataGraph.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a data graph for the percent of the crop or livestock area
+          classified by the U.S. Drought Monitor categories.
+        </div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Maps
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/Maps.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a national map of the crop or livestock area overlaid with the
+          drought extent as determined by the U.S. Drought Monitor.
+        </div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Animations
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/Animations.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a time series animation of the weekly maps. Choose from multiple
+          time periods.
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+  </body>
+</html>
