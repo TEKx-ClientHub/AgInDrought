@@ -1,0 +1,75 @@
+.navbar-nav li a {
+  color: white;
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-size: 25px;
+}
+
+.lh-base.home {
+  font-family: var(--font1);
+  margin-top: 120px;
+  margin-left: 160px;
+}
+
+.lh-base {
+  font-family: var(--font1);
+  margin-top: 20px;
+  margin-left: 160px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #076934;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+
+hr {
+  width: 500px;
+  margin-left: 160px;
+  font-weight: 500;
+  opacity: 1;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 65px;
+}
+
+.card-deck {
+  margin-top: 55px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-bottom: 520px;
+}
+
+.card-img-top {
+  width: 256px;
+  height: 180px;
+}
+
+.date {
+  position: absolute;
+  margin-left: 850px;
+}
+
+h5 {
+  position: absolute;
+  margin-left: 950px;
+  margin-top: 55px;
+  font-size: small;
+}
+
+/* Table */
+.table {
+  position: absolute;
+  width: 500px;
+  margin-top: 100px;
+  margin-left: 850px;
+}
