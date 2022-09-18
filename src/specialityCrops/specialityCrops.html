@@ -17,7 +17,8 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="specialityCrops.css" rel="stylesheet" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
 
     <!-- Table -->
     <link
@@ -57,16 +58,33 @@
         >
           <ul class="navbar-nav justify-content-between w-50">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/Users/francis/Documents/GitHub/AgInDrought/src/home/index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Row Crops</a>
+              <a
+                class="nav-link"
+                href="/Users/francis/Documents/GitHub/AgInDrought/src/rowCrops/rowCrops.html"
+                >Row Crops</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link">Livestock & Forage</a>
+              <a
+                class="nav-link"
+                href="/Users/francis/Documents/GitHub/AgInDrought/src/liveStock/liveStock.html"
+                >Livestock & Forage</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link">Speciality Crops</a>
+              <a
+                class="nav-link active"
+                href="/Users/francis/Documents/GitHub/AgInDrought/src/specialityCrops/specialityCrops.html"
+                >Speciality Crops</a
+              >
             </li>
           </ul>
         </div>
@@ -79,8 +97,8 @@
     <!-- Table -->
 
     <table
-      class="table"
-      id="table"
+      class="table table-striped"
+      id="tableCrops"
       data-pagination="true"
       data-search="true"
       data-show-columns="true"
@@ -130,66 +148,77 @@
       });
     </script>
 
-    <p class="lh-base home">
-      Welcome to the United States Agricultural Commodities <br />
-      in Drought website. This site will provide information <br />
-      about the percentage of various U.S. agricultural <br />
-      commodities being affected by drought. All drought <br />
-      information is derived from the U.S. Drought Monitor.<br />
-      This information is presented in a number of formats <br />
-      as listed below.
-    </p>
-
-    <h3>
-      U.S. Agricultural Commodities in Drought<br />
-      Archive
-    </h3>
-
-    <hr />
-
-    <p class="lh-base">
-      View the weekly PDF produced by the USDA. This <br />
-      document contains maps and other statistics.
-    </p>
-
     <!-- Cards -->
-
-    <h4 class="text-center">
-      Agricultural Statistics, Monitoring & Management Information by Crop Type
-    </h4>
-
-    <div class="card-deck">
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/1.png"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Row Crops</h5>
+    <div class="specialityCrops-cards">
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Data Table
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/DataTable.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View tabular data for the percent of the crop or livestock area
+          classified by the U.S. Drought Monitor categories.
         </div>
       </div>
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/2.png"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Livestock & Forage</h5>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Data Graph
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/DataGraph.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a data graph for the percent of the crop or livestock area
+          classified by the U.S. Drought Monitor categories.
         </div>
       </div>
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/3.png"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Speciality Crops</h5>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Maps
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/Maps.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a national map of the crop or livestock area overlaid with the
+          drought extent as determined by the U.S. Drought Monitor.
+        </div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-header bg-transparent border-0" id="card_header">
+          Animations
+        </div>
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="/Users/francis/Documents/GitHub/AgInDrought/src/assets/Animations.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          View a time series animation of the weekly maps. Choose from multiple
+          time periods.
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
