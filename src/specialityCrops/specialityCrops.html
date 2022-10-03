@@ -82,133 +82,137 @@
       </div>
     </nav>
 
-    <h3 class="date">Agriculture in Drought for May 24, 2022</h3>
-    <h5>All values listed below are percentages</h5>
+    <main class="my-5">
+      <div class="container">
+        <h3 class="date">Agriculture in Drought for May 24, 2022</h3>
+        <h5>All values listed below are percentages</h5>
 
-    <!-- Table -->
+        <!-- Table -->
 
-    <table
-      class="table table-striped"
-      id="tableCrops"
-      data-pagination="true"
-      data-search="true"
-      data-show-columns="true"
-      data-advanced-search="true"
-      data-id-table="advancedTable"
-    >
-      <thead>
-        <tr>
-          <th data-sortable="true" data-field="col"></th>
-          <th data-sortable="true" data-field="col"></th>
-          <th data-sortable="true" data-field="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Alfalfa Hay acreage</td>
-          <td>44</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Cattle acreage</td>
-          <td>52</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Hay acreage</td>
-          <td>43</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Hogs and Pigs acreage</td>
-          <td>24</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Milk Cows acreage</td>
-          <td>46</td>
-        </tr>
-        <tr></tr>
-      </tbody>
-    </table>
+        <table
+          class="table table-striped"
+          id="tableCrops"
+          data-pagination="true"
+          data-search="true"
+          data-show-columns="true"
+          data-advanced-search="true"
+          data-id-table="advancedTable"
+        >
+          <thead>
+            <tr>
+              <th data-sortable="true" data-field="col"></th>
+              <th data-sortable="true" data-field="col"></th>
+              <th data-sortable="true" data-field="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Alfalfa Hay acreage</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Cattle acreage</td>
+              <td>52</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Hay acreage</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Hogs and Pigs acreage</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Milk Cows acreage</td>
+              <td>46</td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
 
-    <script>
-      $(function () {
-        $("#table").bootstrapTable();
-      });
-    </script>
+        <script>
+          $(function () {
+            $("#table").bootstrapTable();
+          });
+        </script>
 
-    <!-- Cards -->
-    <div class="specialityCrops-cards">
-      <div class="card border-0 mb-3" style="max-width: 18rem">
-        <div class="card-header bg-transparent border-0" id="card_header">
-          Data Table
-        </div>
-        <div class="card-body text-success">
-          <img
-            class="card-img-top"
-            src="../assets/DataTable.png"
-            alt="Card image cap"
-          />
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          View tabular data for the percent of the crop or livestock area
-          classified by the U.S. Drought Monitor categories.
+        <!-- Cards -->
+        <div class="specialityCrops-cards">
+          <div class="card border-0 mb-3" style="max-width: 18rem">
+            <div class="card-header bg-transparent border-0" id="card_header">
+              Data Table
+            </div>
+            <div class="card-body text-success">
+              <img
+                class="card-img-top"
+                src="../assets/DataTable.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              View tabular data for the percent of the crop or livestock area
+              classified by the U.S. Drought Monitor categories.
+            </div>
+          </div>
+
+          <div class="card border-0 mb-3" style="max-width: 18rem">
+            <div class="card-header bg-transparent border-0" id="card_header">
+              Data Graph
+            </div>
+            <div class="card-body text-success">
+              <img
+                class="card-img-top"
+                src="../assets/DataGraph.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              View a data graph for the percent of the crop or livestock area
+              classified by the U.S. Drought Monitor categories.
+            </div>
+          </div>
+
+          <div class="card border-0 mb-3" style="max-width: 18rem">
+            <div class="card-header bg-transparent border-0" id="card_header">
+              Maps
+            </div>
+            <div class="card-body text-success">
+              <img
+                class="card-img-top"
+                src="../assets/Maps.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              View a national map of the crop or livestock area overlaid with
+              the drought extent as determined by the U.S. Drought Monitor.
+            </div>
+          </div>
+
+          <div class="card border-0 mb-3" style="max-width: 18rem">
+            <div class="card-header bg-transparent border-0" id="card_header">
+              Animations
+            </div>
+            <div class="card-body text-success">
+              <img
+                class="card-img-top"
+                src="../assets/Animations.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              View a time series animation of the weekly maps. Choose from
+              multiple time periods.
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="card border-0 mb-3" style="max-width: 18rem">
-        <div class="card-header bg-transparent border-0" id="card_header">
-          Data Graph
-        </div>
-        <div class="card-body text-success">
-          <img
-            class="card-img-top"
-            src="../assets/DataGraph.png"
-            alt="Card image cap"
-          />
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          View a data graph for the percent of the crop or livestock area
-          classified by the U.S. Drought Monitor categories.
-        </div>
-      </div>
-
-      <div class="card border-0 mb-3" style="max-width: 18rem">
-        <div class="card-header bg-transparent border-0" id="card_header">
-          Maps
-        </div>
-        <div class="card-body text-success">
-          <img
-            class="card-img-top"
-            src="../assets/Maps.png"
-            alt="Card image cap"
-          />
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          View a national map of the crop or livestock area overlaid with the
-          drought extent as determined by the U.S. Drought Monitor.
-        </div>
-      </div>
-
-      <div class="card border-0 mb-3" style="max-width: 18rem">
-        <div class="card-header bg-transparent border-0" id="card_header">
-          Animations
-        </div>
-        <div class="card-body text-success">
-          <img
-            class="card-img-top"
-            src="../assets/Animations.png"
-            alt="Card image cap"
-          />
-        </div>
-        <div class="card-footer bg-transparent border-0">
-          View a time series animation of the weekly maps. Choose from multiple
-          time periods.
-        </div>
-      </div>
-    </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
