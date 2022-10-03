@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ag in Drought</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ag In Drought</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,374 +26,357 @@
     />
   </head>
   <body>
-    <header>
-      <div
-        class="top-header text-light py-1 text-center"
-        style="background: #5c5755"
-      >
-        <div class="col-md-7 pl-10">
-          <p class="fw-bold">U.S. Agricultural Commodities in Drought</p>
-        </div>
+    <div
+      class="top-header text-light py-1 text-center"
+      style="background: #5c5755"
+    >
+      <div class="col-md-17 pl-10 ">
+        <p class="fw-bold text-center ">U.S. Agricultural Commodities In Drought</p>
       </div>
-      <nav
-        class="navbar navbar-expand-lg text-light"
-        style="margin-top: 5px; background: #076934"
-      >
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse"
-            id="navbarNav"
-            style="margin-left: 175px"
-          >
-            <ul class="navbar-nav justify-content-between w-50">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../rowCrops/rowCrops.html"
-                  >Row Crops</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../liveStock/liveStock.html"
-                  >Livestock & Forage</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="../specialityCrops/specialityCrops.html"
-                  >Speciality Crops</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7"></div>
-        </div>
-
-        <h3 class="date">Agriculture in Drought for May 24, 2022</h3>
-        <h5>All values listed below are percentages</h5>
-
-        <!-- Table -->
-
-        <table
-          class="table"
-          data-pagination="true"
-          data-search="true"
-          data-show-columns="true"
-          data-advanced-search="true"
-          data-id-table="advancedTable"
+    </div>
+    <nav
+      class="navbar navbar-expand-lg text-light"
+      style="margin-top: 5px; background: #076934"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <thead>
-            <tr>
-              <th data-sortable="true" data-field="col"></th>
-              <th data-sortable="true" data-field="col"></th>
-              <th data-sortable="true" data-field="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Alfalfa Hay acreage</td>
-              <td>44</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Cattle acreage</td>
-              <td>52</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Hay acreage</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Hogs and Pigs acreage</td>
-              <td>24</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Milk Cows acreage</td>
-              <td>46</td>
-            </tr>
-            <tr></tr>
-          </tbody>
-        </table>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          style="margin-left: 175px"
+        >
+          <ul class="navbar-nav justify-content-between w-50">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rowCrops/rowCrops.html">Row Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../liveStock/liveStock.html"
+                >Livestock & Forage</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../specialityCrops/specialityCrops.html"
+                >Speciality Crops</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <script>
-          $(function () {
-            $('#table').bootstrapTable();
-          });
-        </script>
+    <h3 class="date">Agriculture in Drought for May 24, 2022</h3>
+    <h5>All values listed below are percentages</h5>
 
-        <!--Intro-->
-        <p class="lh-base home">
-          Welcome to the United States Agricultural Commodities <br />
-          in Drought website. This site will provide information <br />
-          about the percentage of various U.S. agricultural <br />
-          commodities being affected by drought. All drought <br />
-          information is derived from the U.S. Drought Monitor.<br />
-          This information is presented in a number of formats <br />
-          as listed below.
-        </p>
+    <!-- Table -->
 
-        <h3>
-          U.S. Agricultural Commodities in Drought<br />
-          Archive
-        </h3>
+    <table
+      class="table"
+      data-pagination="true"
+      data-search="true"
+      data-show-columns="true"
+      data-advanced-search="true"
+      data-id-table="advancedTable"
+    >
+      <thead>
+        <tr>
+          <th data-sortable="true" data-field="col"></th>
+          <th data-sortable="true" data-field="col"></th>
+          <th data-sortable="true" data-field="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Alfalfa Hay acreage</td>
+          <td>44</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cattle acreage</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hay acreage</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hogs and Pigs acreage</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Milk Cows acreage</td>
+          <td>46</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
 
-        <hr />
+    <script>
+      $(function () {
+        $("#table").bootstrapTable();
+      });
+    </script>
 
-        <p class="lh-base">
-          View the weekly PDF produced by the USDA. This <br />
-          document contains maps and other statistics.
-        </p>
+    <p class="lh-base home">
+      Welcome to the United States Agricultural Commodities <br />
+      in Drought website. This site will provide information <br />
+      about the percentage of various U.S. agricultural <br />
+      commodities being affected by drought. All drought <br />
+      information is derived from the U.S. Drought Monitor.<br />
+      This information is presented in a number of formats <br />
+      as listed below.
+    </p>
 
-        <!-- Cards -->
+    <h3>
+      U.S. Agricultural Commodities in Drought<br />
+      Archive
+    </h3>
 
-        <h4 class="text-center">
-          Agricultural Statistics, Monitoring & Management Information by Crop
-          Type
-        </h4>
+    <hr />
 
-        <!-- Cards -->
-        <div class="home-cards">
-          <div class="card border-0 mb-3" style="max-width: 18rem">
-            <div class="card-body text-success">
-              <img
-                class="card-img-top"
-                src="../assets/1.png"
-                alt="Card image cap"
-              />
+    <p class="lh-base">
+      View the weekly PDF produced by the USDA. This <br />
+      document contains maps and other statistics.
+    </p>
+
+    <!-- Cards -->
+
+    <h4 class="text-center">
+      Agricultural Statistics, Monitoring & Management Information by Crop Type
+    </h4>
+
+    <!-- Cards -->
+    <div class="home-cards">
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/1.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">Row Crops</div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/2.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          Livestock & Forage
+        </div>
+      </div>
+
+      <div class="card border-0 mb-3" style="max-width: 18rem">
+        <div class="card-body text-success">
+          <img
+            class="card-img-top"
+            src="../assets/3.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-footer bg-transparent border-0">Speciality Crops</div>
+      </div>
+    </div>
+
+    <!--Add accords-->
+
+    <div class="container mt-3 my-3">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Drought Monitoring & Prediction Resources
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>GrassCast & Ranch Drought Monitoring Dashboard</li>
+                <li>
+                  Market info – hay stores or price data, livestock sales
+                  data?
+                </li>
+                <li>ERS, AMS, NASS </li>
+                <li>Submit a Report to CMOR</li>
+              </ul>
             </div>
-            <div class="card-footer bg-transparent border-0">Row Crops</div>
           </div>
-
-          <div class="card border-0 mb-3" style="max-width: 18rem">
-            <div class="card-body text-success">
-              <img
-                class="card-img-top"
-                src="../assets/2.png"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-footer bg-transparent border-0">
-              Livestock & Forage
-            </div>
-          </div>
-
-          <div class="card border-0 mb-3" style="max-width: 18rem">
-            <div class="card-body text-success">
-              <img
-                class="card-img-top"
-                src="../assets/3.png"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-footer bg-transparent border-0">
-              Speciality Crops
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Relevant USDA programs & payments
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  RMA programs by crop -
+                  <a href="https://www.rma.usda.gov/Commodity ">Link</a>
+                </li>
+                <li>
+                  Map -<a
+                    href="https://public-rma.fpac.usda.gov/apps/MapViewer/index.html​"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  FSA Livestock Forage Disaster Program Eligibility Tool
+                </li>
+                <li>
+                  SRMA indemnity payment maps -
+                  <a
+                    href="https://www.rma.usda.gov/en/Information-Tools/Crop-Indemnity-Maps"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  What data are used for PRF?
+                  <a href="https://prodwebnlb.rma.usda.gov/apps/prf ">
+                    Link</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.farmers.gov/protection-recovery/drought "
+                  >
+                    Link</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!--Add accords-->
-
-        <div class="container mt-3">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Drought Monitoring & Prediction Resources
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li>GrassCast & Ranch Drought Monitoring Dashboard</li>
-                    <li>
-                      Market info – hay stores or price data, livestock sales
-                      data?
-                    </li>
-                    <li>ERS, AMS, NASS </li>
-                    <li>Submit a Report to CMOR</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  Relevant USDA programs & payments
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li>
-                      RMA programs by crop -
-                      <a href="https://www.rma.usda.gov/Commodity ">Link</a>
-                    </li>
-                    <li>
-                      Map -<a
-                        href="https://public-rma.fpac.usda.gov/apps/MapViewer/index.html​"
-                        >Link</a
-                      >
-                    </li>
-                    <li>
-                      FSA Livestock Forage Disaster Program Eligibility Tool
-                    </li>
-                    <li>
-                      SRMA indemnity payment maps -
-                      <a
-                        href="https://www.rma.usda.gov/en/Information-Tools/Crop-Indemnity-Maps"
-                        >Link</a
-                      >
-                    </li>
-                    <li>
-                      What data are used for PRF?
-                      <a href="https://prodwebnlb.rma.usda.gov/apps/prf ">
-                        Link</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.farmers.gov/protection-recovery/drought "
-                      >
-                        Link</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Planning & Management
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li>Managing Drought Risk on the Ranch</li>
-                    <li>Drought Management Database (Ag- Livestock)</li>
-                    <li>
-                      FSA Livestock Forage Disaster Program Eligibility Tool 
-                    </li>
-                    <li>Mental health resources</li>
-                    <li>
-                      What data are used for PRF?
-                      <a href="https://prodwebnlb.rma.usda.gov/apps/prf ">
-                        Link</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.farmers.gov/protection-recovery/drought "
-                      >
-                        Link</a
-                      > 
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFour"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseFour"
-                >
-                  State, Regional, Climate Hub Resources
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingFour"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li>NDMC Database of Resources by State</li>
-                    <li>Link to Climate Hubs & Resources</li>
-                  </ul>
-                </div>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Planning & Management
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Managing Drought Risk on the Ranch</li>
+                <li>Drought Management Database (Ag- Livestock)</li>
+                <li>
+                  FSA Livestock Forage Disaster Program Eligibility Tool 
+                </li>
+                <li>Mental health resources</li>
+                <li>
+                  What data are used for PRF?
+                  <a href="https://prodwebnlb.rma.usda.gov/apps/prf ">
+                    Link</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.farmers.gov/protection-recovery/drought "
+                  >
+                    Link</a
+                  > 
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-          integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-          crossorigin="anonymous"
-        ></script>
-        <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.js"></script>
-        <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              State, Regional, Climate Hub Resources
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>NDMC Database of Resources by State</li>
+                <li>Link to Climate Hubs & Resources</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start">
-      <div class="text-center p-3 text-light" style="background-color: #076934">
-        © 2022 - National Drought Mitigation Center
-      </div>
-    </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
   </body>
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3 text-light" style="background-color: #076934">
+      © 2022 - National Drought Mitigation Center
+    </div>
+  </footer>
 </html>
