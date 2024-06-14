@@ -1,2 +1,2 @@
-# AgInDrought
-A website application showing Agriculture data in Drought
+# AgInDrought Application 
+A website application showing Agriculture data in Drought. USDA Project. 
